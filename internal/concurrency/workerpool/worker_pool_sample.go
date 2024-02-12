@@ -1,10 +1,5 @@
-package workerpool
-
-import (
-	"fmt"
-	"time"
-)
-
+// Package workerpool provides an implementation of the worker pool pattern in Go.
+//
 // Problem Statement:
 //
 // Implement a worker pool pattern in Go. The worker pool should have a fixed
@@ -13,6 +8,12 @@ import (
 // job should take a fixed amount of time to process. After all jobs are
 // processed, the main program should wait for all results to be collected
 // from the workers.
+package workerpool
+
+import (
+	"fmt"
+	"time"
+)
 
 // Workers represents a group of workers with the number of jobs and workers.
 type Workers struct {
