@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
-	worker := workerpool.NewWorker(5, 3)
-	worker.Run()
+	//worker := workerpool.NewWorker(5, 3)
+	//worker.Run()
+
+	//Real-Time Example
+	worker_group := workerpool.NewRealWorker(5, 5)
+	worker_group.Run()
 }
